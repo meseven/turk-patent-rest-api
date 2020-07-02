@@ -17,8 +17,8 @@ mongoose.connect(process.env.MONGODB_STRING, {
 	useUnifiedTopology: true,
 });
 
-mongoose.connection.on('open', () => console.log('MongoDB: Connected'));
-mongoose.connection.on('error', (err) => console.log('MongoDB: Error', err));
+// mongoose.connection.on('open', () => console.log('MongoDB: Connected'));
+// mongoose.connection.on('error', (err) => console.log('MongoDB: Error', err));
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

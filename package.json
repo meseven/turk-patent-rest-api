@@ -4,14 +4,18 @@
 	"private": true,
 	"scripts": {
 		"start": "node ./bin/www",
-		"start:dev": "nodemon ./bin/www"
+		"start:dev": "nodemon ./bin/www",
+		"test": "./node_modules/.bin/mocha --exit --recursive"
 	},
 	"dependencies": {
+		"chai": "^4.2.0",
+		"chai-http": "^4.3.0",
 		"cookie-parser": "~1.4.4",
 		"debug": "~2.6.9",
 		"dotenv": "^8.2.0",
 		"express": "~4.16.1",
 		"http-errors": "~1.6.3",
+		"mocha": "^8.0.1",
 		"mongoose": "^5.9.21",
 		"morgan": "~1.9.1",
 		"pug": "2.0.0-beta11"
