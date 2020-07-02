@@ -9,6 +9,5 @@ before_install:
   - npm install
   - npm install -g node-gyp
   - export NODE_ENV=production
-
 script:
-	- npm run test
+  - npm run test
